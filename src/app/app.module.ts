@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StockListComponent } from './stock-list.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StockListComponent } from './stock-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent, StockListComponent]

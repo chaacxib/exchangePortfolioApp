@@ -1,9 +1,19 @@
-<h1>Stocks</h1>
-<div *ngFor="let stock of stocks" class="card">
-    <h5 class="card-header">{{ stock.symbol }}</h5>
-    <div class="card-body">
-      <h5 class="card-title">{{ stock.name }}</h5>
-      <p class="card-text">{{ stock.description }}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+<h3 *ngIf="stocks"><span class="badge badge-secondary">Total Stocks: {{ stocks.length }}</span></h3>
+
+<div *ngFor="let stock of stocks" class="card mb-3">
+  <h5 class="card-header" style="text-transform:uppercase">{{ stock.symbol }}</h5>
+  <div class="card-img-top">
+    <canvas
+      baseChart
+      [legend]="true"
+      [labels]=[]
+      [data]=renderChartData(stock)
+      [options]="chartOptions"
+  >
+  </canvas>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ stock.name }}</h5>
+    <p class="card-text">{{ stock.description }}</p>
+  </div>
 </div>

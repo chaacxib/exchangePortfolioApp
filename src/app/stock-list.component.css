@@ -1,0 +1,23 @@
+canvas {
+    max-height: 10rem;
+}
+
+div.card {
+    background-color: #1f2033;
+    color: #fff;
+    opacity: 0.6;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+h3 {
+    margin: 2rem 0rem 2rem 2rem;
+}
+
+span.badge {
+    background-color: #000;
+}
+
+h5.card-header {
+    background-color: #000;
+    /* color: #fff; */
+}

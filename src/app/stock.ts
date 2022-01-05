@@ -3,4 +3,5 @@ export class Stock {
     name!: String;
     description!: String;
     symbol!: String;
+    market_value!: Array<number>;
 }
