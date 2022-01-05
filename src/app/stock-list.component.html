@@ -1,6 +1,11 @@
-<h3 *ngIf="stocks"><span class="badge badge-secondary">Total Stocks: {{ stocks.length }}</span></h3>
+<nav class="navbar navbar-dark bg-dark justify-content-between w-100">
+  <a *ngIf="stocks" class="navbar-brand">Total Stocks: {{ stocks.length }}</a>
+  <div class="form-group">
+    <input class="form-control mr-sm-2" type="text" [(ngModel)]="data" placeholder="Search stocks" aria-label="Search">
+  </div>
+</nav>
 
-<div *ngFor="let stock of stocks" class="card mb-3">
+<div *ngFor="let stock of stocks | filter:data" class="card mb-3">
   <h5 class="card-header" style="text-transform:uppercase">{{ stock.symbol }}</h5>
   <div class="card-img-top">
     <canvas

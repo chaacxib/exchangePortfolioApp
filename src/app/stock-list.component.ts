@@ -11,7 +11,7 @@ import { ChartDataset } from 'chart.js';
   styleUrls: ['./stock-list.component.css']
 })
 export class StockListComponent implements OnInit {
-
+  data!: string;
   stocks!: Stock[];
   stock: Stock = new Stock();
   chartOptions = {

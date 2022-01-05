@@ -3,21 +3,23 @@ canvas {
 }
 
 div.card {
-    background-color: #1f2033;
+    background-color: #1f2033d0;
     color: #fff;
-    opacity: 0.6;
-    margin: 0rem 2rem 0rem 2rem;
+    margin: 2rem 2rem 0rem 2rem;
 }
 
 h3 {
     margin: 2rem 0rem 2rem 2rem;
 }
 
-span.badge {
+navbar {
     background-color: #000;
 }
 
+a.navbar-brand {
+    color: #fff;
+}
+
 h5.card-header {
-    background-color: #000;
-    /* color: #fff; */
+    background-color: #343a40;
 }
