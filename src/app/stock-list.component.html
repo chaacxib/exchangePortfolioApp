@@ -1,0 +1,9 @@
+<h1>Stocks</h1>
+<div *ngFor="let stock of stocks" class="card">
+    <h5 class="card-header">{{ stock.symbol }}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{ stock.name }}</h5>
+      <p class="card-text">{{ stock.description }}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
